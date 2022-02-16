@@ -5,16 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
-    <style rel="stylesheet" href="styles/styles.css"></style>
+    <link rel="stylesheet" href="styles/styles.css"></link>
+    <script src="js/todo.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Design system</h1>
+    <div class="container">        
+    <h1 class="text-dark"> Enter Your Note
+    </h1>
+    <div class="flex">
+        <input type="text" id="note-input">
+        <button class="btn-add text-dark call-to-action" onclick="addNote()">Add Note</button>
+        <button class="btn-add text-dark call-to-action" style="background-color:rgb(165, 123, 130)" onclick="deleteNote()">Delete Note</button>
+    </div>    
+    <h2 style="margin-top:2rem">Notes:</h2>
+</div>
+<ul id="note-list"></ul>
 
-        <section id="colors">
-            
-        </section>
-    </div>
-    
 </body>
 </html>
