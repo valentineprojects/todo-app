@@ -1,17 +1,12 @@
 
+function addNote() {
+    var node = document.createElement("LI");
+    node.textContent = document.getElementById("note-input").value;
 
-function addNote(){
-    var li = document.createElement('li');
-    var inputValue = document.getElementById('note-input').value;
-    var textNode = document.createTextNode(inputValue);
-    li.appendChild(textNode);
-    document.getElementById('note-list').appendChild(li);
+    var btn = document.createElement("button");
+    btn.textContent = "delete";
+    btn.addEventListener('click', () => node.remove());
+    node.appendChild(btn);
 
-}
-
-
-function deleteNote(){
-    var list = document.getElementById('add-note');
-    var lastChild = list.lastElementChild();
-    lastChild.remove();
+    document.getElementById("note-list").appendChild(node);
 }

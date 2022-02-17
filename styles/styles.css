@@ -149,3 +149,5 @@ select{
     height: 4rem;
     width: 12rem;
 }
+
+li > button { margin-left: 5px }
